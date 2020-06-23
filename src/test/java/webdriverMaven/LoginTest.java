@@ -22,9 +22,11 @@ public class LoginTest {
 	@Test
 	public void doLogin() {
 		
-		driver.get("https://valkotolle.de/wp/wp-login.php");
-		driver.findElement(By.id("user_login")).sendKeys("vtadmin");
-		driver.findElement(By.id("user_pass")).sendKeys("blabla");
+		driver.get("https://6erpack.sky.de/auth/login");
+		driver.findElement(By.id("login_local")).click();
+		
+		driver.findElement(By.id("email")).sendKeys("hallo@welt.de");
+		driver.findElement(By.id("password")).sendKeys("blabla");
 		
 	}
 
