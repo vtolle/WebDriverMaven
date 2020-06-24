@@ -28,6 +28,10 @@ public class LoginTest {
 		driver.findElement(By.id("email")).sendKeys("hallo@welt.de");
 		driver.findElement(By.id("password")).sendKeys("blabla");
 		
+		/*
+		 * new comment added
+		 */
+		
 	}
 
 	@AfterSuite
