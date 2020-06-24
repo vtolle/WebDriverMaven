@@ -26,7 +26,8 @@ public class LoginTest {
 		driver.findElement(By.id("login_local")).click();
 		
 		driver.findElement(By.id("email")).sendKeys("hallo@welt.de");
-		driver.findElement(By.id("password")).sendKeys("blabla");
+//		driver.findElement(By.id("password")).sendKeys("blabla"); // no error
+		driver.findElement(By.id("paword")).sendKeys("blabla"); // cause an error
 		
 		/*
 		 * new comment added
